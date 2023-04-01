@@ -1,5 +1,6 @@
 import React from 'react';
 import { Field, Form, Formik } from 'formik';
+import image3 from '../assets/image3.jpg';
 
 export default function Contact() {
   const handleSubmit = (values) => {
@@ -60,7 +61,6 @@ export default function Contact() {
             }
             return errors;
           }}
-          className="bg-info"
         >
           {({ touched, errors, isValid }) => (
             <Form className="w-50 position-relative start-15">
@@ -92,6 +92,11 @@ export default function Contact() {
         </Formik>
       </div>
       <div className="col-4 bg-gray-200"></div>
+      <img
+        src={image3}
+        alt="Mountain with lake and snowy forest"
+        className="vw-30 position-absolute top-50 end-0 translate-middle"
+      />
     </div>
   );
 }

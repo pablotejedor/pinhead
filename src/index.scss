@@ -64,6 +64,8 @@ $utilities: map-merge(
       class: vw,
       values: (
         2: 2vw,
+        30: 30vw,
+        40: 40vw,
         60: 60vw,
         100: 100vw,
       ),
@@ -221,4 +223,8 @@ $utilities: map-merge(
 
 .input-form:focus {
   outline: none;
+}
+
+textarea {
+  resize: none;
 }
