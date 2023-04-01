@@ -1,0 +1,17 @@
+import About from './components/About';
+import Products from './components/Products';
+import Header from './components/Header';
+import Services from './components/Services';
+
+function App() {
+  return (
+    <main className="d-flex flex-column align-items-center min-vh-100">
+      <Header />
+      <About />
+      <Products />
+      <Services />
+    </main>
+  );
+}
+
+export default App;
