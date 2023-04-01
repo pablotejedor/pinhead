@@ -3,6 +3,7 @@
 $font-family-base: 'Roboto', var(--bs-font-sans-serif);
 
 $h1-font-size: 48px;
+$spacer: 1rem;
 
 // Colors
 $orange: #e0752f;
@@ -42,6 +43,15 @@ $position-values: (
   90: 90%,
   95: 95%,
   100: 100%,
+);
+
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
 );
 
 // Sizing
@@ -156,6 +166,27 @@ $utilities: map-merge(
         0: 0,
         'accordion': $border-width solid $gray-200,
       ),
+    ),
+  )
+);
+
+// padding-x
+$utilities: map-merge(
+  $utilities,
+  (
+    'padding-x': (
+      responsive: true,
+      property: padding-right padding-left,
+      class: px,
+      values:
+        map-merge(
+          $spacers,
+          (
+            auto: auto,
+            6: $spacer * 5,
+            9: $spacer * 9,
+          )
+        ),
     ),
   )
 );

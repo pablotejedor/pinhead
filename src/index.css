@@ -1197,6 +1197,21 @@
   padding-left: 3rem !important;
 }
 
+.px-auto {
+  padding-right: auto !important;
+  padding-left: auto !important;
+}
+
+.px-6 {
+  padding-right: 5rem !important;
+  padding-left: 5rem !important;
+}
+
+.px-9 {
+  padding-right: 9rem !important;
+  padding-left: 9rem !important;
+}
+
 .py-0 {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
@@ -2068,6 +2083,18 @@
     padding-right: 3rem !important;
     padding-left: 3rem !important;
   }
+  .px-sm-auto {
+    padding-right: auto !important;
+    padding-left: auto !important;
+  }
+  .px-sm-6 {
+    padding-right: 5rem !important;
+    padding-left: 5rem !important;
+  }
+  .px-sm-9 {
+    padding-right: 9rem !important;
+    padding-left: 9rem !important;
+  }
   .py-sm-0 {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
@@ -2563,6 +2590,18 @@
   .px-md-5 {
     padding-right: 3rem !important;
     padding-left: 3rem !important;
+  }
+  .px-md-auto {
+    padding-right: auto !important;
+    padding-left: auto !important;
+  }
+  .px-md-6 {
+    padding-right: 5rem !important;
+    padding-left: 5rem !important;
+  }
+  .px-md-9 {
+    padding-right: 9rem !important;
+    padding-left: 9rem !important;
   }
   .py-md-0 {
     padding-top: 0 !important;
@@ -3060,6 +3099,18 @@
     padding-right: 3rem !important;
     padding-left: 3rem !important;
   }
+  .px-lg-auto {
+    padding-right: auto !important;
+    padding-left: auto !important;
+  }
+  .px-lg-6 {
+    padding-right: 5rem !important;
+    padding-left: 5rem !important;
+  }
+  .px-lg-9 {
+    padding-right: 9rem !important;
+    padding-left: 9rem !important;
+  }
   .py-lg-0 {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
@@ -3556,6 +3607,18 @@
     padding-right: 3rem !important;
     padding-left: 3rem !important;
   }
+  .px-xl-auto {
+    padding-right: auto !important;
+    padding-left: auto !important;
+  }
+  .px-xl-6 {
+    padding-right: 5rem !important;
+    padding-left: 5rem !important;
+  }
+  .px-xl-9 {
+    padding-right: 9rem !important;
+    padding-left: 9rem !important;
+  }
   .py-xl-0 {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
@@ -4051,6 +4114,18 @@
   .px-xxl-5 {
     padding-right: 3rem !important;
     padding-left: 3rem !important;
+  }
+  .px-xxl-auto {
+    padding-right: auto !important;
+    padding-left: auto !important;
+  }
+  .px-xxl-6 {
+    padding-right: 5rem !important;
+    padding-left: 5rem !important;
+  }
+  .px-xxl-9 {
+    padding-right: 9rem !important;
+    padding-left: 9rem !important;
   }
   .py-xxl-0 {
     padding-top: 0 !important;

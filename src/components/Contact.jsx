@@ -27,7 +27,7 @@ export default function Contact() {
   ];
 
   return (
-    <div className="d-flex w-100 vh-75 position-relative">
+    <div className="d-flex w-100 vh-100 position-relative">
       <div className="d-flex flex-column justify-content-center align-items-start col-8 bg-gray-100 position-relative">
         <div className="d-flex flex-column align-items-start font-poppins mb-5 w-50 position-relative start-15">
           <h1 className="m-0 fw-bold text-gray-300">Get in touch</h1>
@@ -94,7 +94,7 @@ export default function Contact() {
       <div className="col-4 bg-gray-200"></div>
       <img
         src={image3}
-        alt="Mountain with lake and snowy forest"
+        alt="Sunset"
         className="vw-30 position-absolute top-50 end-0 translate-middle"
       />
     </div>
