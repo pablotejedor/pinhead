@@ -2,6 +2,7 @@ import About from './components/About';
 import Products from './components/Products';
 import Header from './components/Header';
 import Services from './components/Services';
+import Contact from './components/Contact';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <About />
       <Products />
       <Services />
+      <Contact />
     </main>
   );
 }

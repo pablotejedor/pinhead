@@ -6,6 +6,8 @@ $h1-font-size: 48px;
 
 // Colors
 $orange: #e0752f;
+$gray-placeholder: #5f6368;
+$gray-input: #bebebe;
 $gray-100: #f2f4f1;
 $gray-200: #dce1da;
 $gray-300: #343434;
@@ -206,4 +208,17 @@ $utilities: map-merge(
 
 .font-poppins {
   font-family: 'Poppins';
+}
+
+::placeholder {
+  color: $gray-placeholder;
+}
+
+.input-form {
+  border: none;
+  border-bottom: 1px solid $gray-input;
+}
+
+.input-form:focus {
+  outline: none;
 }

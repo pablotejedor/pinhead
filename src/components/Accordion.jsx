@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { UilAngleDown, UilAngleUp } from '@iconscout/react-unicons';
 
 export default function Accordion({ className }) {
-  const [activeItem, setActiveItem] = useState(1);
+  const [activeItem, setActiveItem] = useState(997);
 
   const clickHandler = (id) => {
     if (activeItem === id) {
@@ -16,26 +16,26 @@ export default function Accordion({ className }) {
       title: 'Sed ut perspiciatis',
       content:
         'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
-      id: 1,
+      id: 997,
     },
     {
       title: 'Sed ut perspiciatis',
       content:
         'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
-      id: 2,
+      id: 998,
     },
     {
       title: 'Sed ut perspiciatis',
       content:
         'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
-      id: 3,
+      id: 999,
     },
   ];
 
   return (
     <div className={`d-flex flex-column ${className}`}>
       {accordionItems.map((item, index, array) => (
-        <div className="d-flex flex-column">
+        <div className="d-flex flex-column" key={item.id}>
           {/* Title */}
           <div
             className={`d-flex align-items-center justify-content-between bg-gray-100 p-4 cursor-pointer border-accordion ${
