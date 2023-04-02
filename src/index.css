@@ -689,6 +689,10 @@
   width: 60vw !important;
 }
 
+.vw-75 {
+  width: 75vw !important;
+}
+
 .vw-100 {
   width: 100vw !important;
 }

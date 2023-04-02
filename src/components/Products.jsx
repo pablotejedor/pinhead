@@ -33,7 +33,7 @@ export default function Products() {
       <div className="col-8 bg-gray-100 h-100"></div>
       <div className="col-4 bg-gray-200 h-100"></div>
       <div
-        className="position-absolute top-50 start-50 translate-middle vw-60 vh-75"
+        className="position-absolute top-50 start-50 translate-middle vw-75 vh-75"
         style={{
           background: `transparent url(${images[step]}) 0% 0% no-repeat padding-box`,
         }}
