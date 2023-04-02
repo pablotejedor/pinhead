@@ -29,7 +29,7 @@ export default function Products() {
   };
 
   return (
-    <div className="d-flex w-100 vh-100 position-relative">
+    <div className="d-flex w-100 vh-100 position-relative" id='Products'>
       <div className="col-8 bg-gray-100 h-100"></div>
       <div className="col-4 bg-gray-200 h-100"></div>
       <div
