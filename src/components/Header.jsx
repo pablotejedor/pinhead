@@ -32,12 +32,12 @@ export default function Header() {
   return (
     <div className="d-flex flex-column w-100 vh-100 header-container position-relative justify-content-center">
       {/* Logo and buttons */}
-      <div className="d-flex align-items-center justify-content-between text-light p-5 header-buttons position-absolute top-0 w-100">
+      <div className="d-flex align-items-center justify-content-between text-light p-5 header-buttons position-absolute top-0 w-100" style={{backdropFilter: 'blur(20px)'}}>
         <img src={logo} alt="logo" className="ms-5" />
         <div className="d-flex align-items-center">
           {menuItems.map((item) => (
             <span
-              className="fs-6 mx-4 cursor-pointer"
+              className="fs-6 mx-4 cursor-pointer text-shadow"
               key={item.url}
               onClick={() => clickHandler(item.url)}
             >

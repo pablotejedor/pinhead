@@ -80,7 +80,11 @@ export default function Contact() {
                   </div>
                 ))}
                 <button
-                  className="bg-orange border-0 text-light col-3 rounded-pill py-3 px-4 mt-4"
+                  className={`${
+                    isValid
+                      ? 'bg-orange text-light cursor-pointer'
+                      : 'bg-gray-200 text-gray-100 cursor-not-allowed'
+                  } border-0 col-3 rounded-pill py-3 px-4 mt-4`}
                   type="submit"
                   disabled={!isValid}
                 >
