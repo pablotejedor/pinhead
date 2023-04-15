@@ -46,13 +46,14 @@ export default function Header() {
                     )}
                     <div
                          className={`d-flex align-items-center ${
-                              mobileDesign && 'my-5 mx-2'
+                              mobileDesign &&
+                              'my-5 px-4 justify-content-between w-100'
                          }`}
                     >
                          {menuItems.map((item) => (
                               <span
                                    className={`fs-6 ${
-                                        mobileDesign ? 'mx-3' : 'mx-4'
+                                        mobileDesign ? '' : 'mx-4'
                                    } cursor-pointer text-shadow`}
                                    key={item.url}
                                    onClick={() => clickHandler(item.url)}

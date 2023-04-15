@@ -9,9 +9,9 @@ export default function Services() {
           <div
                className={`d-flex w-100 ${
                     mobileDesign
-                         ? 'vh-60 justify-content-center'
-                         : 'vh-75 justify-content-end'
-               } position-relative`}
+                         ? 'justify-content-center'
+                         : 'justify-content-end'
+               } position-relative vh-75`}
                id="Services"
           >
                <div className="col-8 bg-gray-100 h-100"></div>

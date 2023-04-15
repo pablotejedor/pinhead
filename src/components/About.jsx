@@ -6,7 +6,7 @@ export default function About() {
 
      return (
           <div
-               className="d-flex flex-column justify-content-center align-items-center w-100 vh-75 p-5 position-relative"
+               className="d-flex flex-column justify-content-center align-items-center w-100 vh-75 p-5 my-5 position-relative"
                id="About"
           >
                {!mobileDesign && (
