@@ -53,16 +53,22 @@ export default function Products() {
      return (
           <div
                className={`d-flex w-100 ${
-                    mobileDesign ? 'vh-50' : 'vh-100'
+                    mobileDesign ? 'vh-40' : 'vh-100'
                } position-relative`}
                id="Products"
           >
-               <div className="col-8 bg-gray-100 h-100"></div>
-               <div className="col-4 bg-gray-200 h-100"></div>
+               {!mobileDesign && (
+                    <>
+                         <div className="col-8 bg-gray-100 h-100"></div>
+                         <div className="col-4 bg-gray-200 h-100"></div>
+                    </>
+               )}
 
                <div
-                    className={`position-absolute top-50 start-50 translate-middle ${
-                         mobileDesign ? 'w-100 h-75' : 'vw-75 vh-75'
+                    className={`${
+                         mobileDesign
+                              ? 'w-100 h-100 position-relative'
+                              : 'vw-75 vh-75 position-absolute top-50 start-50 translate-middle'
                     }`}
                     style={{
                          backgroundImage: `url(${data[step].image})`,
@@ -72,8 +78,8 @@ export default function Products() {
                >
                     <div
                          className={`d-flex flex-column justify-content-center align-items-start ${
-                              mobileDesign ? 'p-3' : 'p-5'
-                         } position-absolute bottom-0 end-0 bg-orange text-light w-50`}
+                              mobileDesign ? 'p-3' : 'p-5 w-50'
+                         } position-absolute bottom-0 end-0 bg-orange text-light`}
                     >
                          {!mobileDesign && (
                               <>

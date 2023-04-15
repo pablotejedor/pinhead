@@ -7,8 +7,10 @@ export default function Services() {
      const { mobileDesign } = useWindowInfo();
      return (
           <div
-               className={`d-flex justify-content-end w-100 ${
-                    mobileDesign ? 'vh-50' : 'vh-75'
+               className={`d-flex w-100 ${
+                    mobileDesign
+                         ? 'vh-60 justify-content-center'
+                         : 'vh-75 justify-content-end'
                } position-relative`}
                id="Services"
           >
@@ -22,8 +24,8 @@ export default function Services() {
                     />
                )}
                <Accordion
-                    className={`position-absolute top-50 start-10 translate-middle-y ${
-                         mobileDesign ? 'col-10' : 'col-4'
+                    className={`position-absolute top-50 translate-middle-y ${
+                         mobileDesign ? 'col-10' : 'col-4 start-10'
                     }`}
                />
           </div>
