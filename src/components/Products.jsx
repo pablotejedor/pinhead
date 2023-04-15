@@ -78,7 +78,7 @@ export default function Products() {
                >
                     <div
                          className={`d-flex flex-column justify-content-center align-items-start ${
-                              mobileDesign ? 'p-3' : 'p-5 w-50'
+                              mobileDesign ? 'p-3 col-4' : 'p-5 w-50'
                          } position-absolute bottom-0 end-0 bg-orange text-light`}
                     >
                          {!mobileDesign && (
