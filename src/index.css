@@ -561,6 +561,10 @@
   border: 1px solid #dce1da !important;
 }
 
+.border-orange {
+  border: 1px solid #e0752f !important;
+}
+
 .border-top {
   border-top: 1px solid #343434 !important;
 }

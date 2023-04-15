@@ -166,6 +166,7 @@ $utilities: map-merge(
         null: $border-width solid $border-color,
         0: 0,
         'accordion': $border-width solid $gray-200,
+        'orange': $border-width solid $orange,
       ),
     ),
   )
