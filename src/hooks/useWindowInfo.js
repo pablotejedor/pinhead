@@ -4,7 +4,7 @@ export default function useWindowInfo() {
      const [windowInfo, setWindowInfo] = useState({
           height: null,
           width: null,
-          mobileDesign: document.body.clientWidth < 480 ? true : false,
+          mobileDesign: document.body.clientWidth < 480,
      });
 
      useEffect(() => {
@@ -12,14 +12,11 @@ export default function useWindowInfo() {
                setWindowInfo({
                     height: document.body.clientHeight,
                     width: document.body.clientWidth,
-                    mobileDesign:
-                         document.body.clientWidth < 480 ? true : false,
+                    mobileDesign: document.body.clientWidth < 480,
                });
           };
 
           window.addEventListener('resize', handleResize);
-
-          handleResize();
 
           return () => window.removeEventListener('resize', handleResize);
      }, []);
